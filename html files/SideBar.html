@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<!--    <script src="../javascript%20files/scripts.js"></script>-->
+<!--    <style>-->
+<!--        @media (min-width: 992px) {-->
+<!--            .sidebar-mini .nav-sidebar, .sidebar-mini .nav-sidebar .nav-link, .sidebar-mini .nav-sidebar > .nav-header {-->
+<!--                white-space: nowrap;-->
+<!--                overflow: hidden;-->
+<!--            }-->
+<!--        }-->
+<!--        .nav {-->
+<!--            padding-inline-start: 0px !important;-->
+<!--        }-->
+<!--        .nav-sidebar {-->
+<!--            position: relative;-->
+<!--        }-->
+<!--        .flex-column {-->
+<!--            flex-direction: column!important;-->
+<!--        }-->
+<!--        .nav {-->
+<!--            display: flex;-->
+<!--            flex-wrap: wrap;-->
+<!--            padding-left: 0;-->
+<!--            margin-bottom: 0;-->
+<!--            list-style: none;-->
+<!--        }-->
+<!--        .nav-sidebar>.nav-item {-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
+<!--        .main-sidebar .brand-text, .sidebar .nav-link p, .sidebar .user-panel .info {-->
+<!--            transition: margin-left .3s linear,opacity .5s ease;-->
+<!--        }-->
+<!--        .nav-sidebar .nav-link p {-->
+<!--            display: inline-block;-->
+<!--            margin: 0;-->
+<!--        }-->
+<!--        .sidebar > div:first-child {-->
+<!--            direction: rtl;-->
+<!--        }-->
+<!--        *, ::after, ::before {-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+<!--        [class*=sidebar-dark] .user-panel {-->
+<!--            border-bottom: 1px solid #4f5962;-->
+<!--        }-->
+<!--        .user-panel, .user-panel .info {-->
+<!--            overflow: hidden;-->
+<!--            white-space: nowrap;-->
+<!--        }-->
+<!--        .user-panel {-->
+<!--            position: relative;-->
+<!--        }-->
+<!--        .elevation-4 {-->
+<!--            box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);-->
+<!--        }-->
+<!--        .sidebar-dark-primary {-->
+<!--            background-color: #343a40;-->
+<!--        }-->
+<!--        ul, menu, dir {-->
+<!--            display: block;-->
+<!--            list-style-type: disc;-->
+<!--            margin-block-start: 1em;-->
+<!--            margin-block-end: 1em;-->
+<!--            margin-inline-start: 0px;-->
+<!--            margin-inline-end: 0px;-->
+<!--            padding-inline-start: 40px;-->
+<!--        }-->
+<!--        .main-sidebar {-->
+<!--            z-index: 1100;-->
+<!--            height: 100vh;-->
+<!--            overflow-y: hidden;-->
+<!--        }-->
+<!--        .main-sidebar, .main-sidebar:before {-->
+<!--            transition: margin-left .3s ease-in-out,width .3s ease-in-out;-->
+<!--            width: 250px;-->
+<!--        }-->
+<!--        .main-sidebar {-->
+<!--            position: fixed;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            bottom: 0;-->
+<!--        }-->
+<!--        address, article, aside, div, footer, header, hgroup, layer, main, nav, section {-->
+<!--            display: block;-->
+<!--        }-->
+<!--        .mt-2, .my-2 {-->
+<!--            margin-top: .5rem!important;-->
+<!--        }-->
+<!--        .sidebar {-->
+<!--            padding-bottom: 0;-->
+<!--            padding-top: 0;-->
+<!--            padding-left: .5rem;-->
+<!--            padding-right: .5rem;-->
+<!--            overflow-y: auto;-->
+<!--            height: calc(100% - 4rem);-->
+<!--        }-->
+
+<!--    </style>-->
+</head>
+<body>
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+<!--    <a href="index3.html" class="brand-link">-->
+<!--        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"-->
+<!--             style="opacity: .8">-->
+<!--        <span class="brand-text font-weight-light">پنل مدیریت</span>-->
+<!--    </a>-->
+
+    <!-- Sidebar style="direction: ltr" style="direction: rtl"-->
+    <div class="sidebar" >
+        <div >
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="info">
+                    <a href="#" class="d-block">naghme@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="pages/calendar.html" class="nav-link">
+                            <i class="nav-icon fa fa-calendar"></i>
+                            <p>
+                                تقویم
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-envelope-o"></i>
+                            <p>
+                                قرارداد‌ها
+                                <i class="fa fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>منتظر امضا من</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/mailbox/compose.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>منتظر امضا طرفین</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>واگذاری شده برای بعد</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/mailbox/compose.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>کامل شده</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pages/calendar.html" class="nav-link">
+                            <i class="nav-icon fa-group"></i>
+                            <p>
+                                دوستان
+                            </p>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-book"></i>
+                            <p>
+                                پروفایل
+                                <i class="fa fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/examples/invoice.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>نغییر امضا</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/examples/profile.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>تغییر اطلاعات شخصی</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/examples/login.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>تغییر رمز عبور</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/examples/login.html" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>تغییر کلید‌ها</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pages/calendar.html" class="nav-link">
+                            <i class="nav-icon fa-group"></i>
+                            <p>
+                                قرارداد‌های حذف شده
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pages/calendar.html" class="nav-link">
+                            <i class="nav-icon fa-group"></i>
+                            <p>
+                                خروج از سایت
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+    </div>
+    <!-- /.sidebar -->
+</aside>
+</body>
+</html>

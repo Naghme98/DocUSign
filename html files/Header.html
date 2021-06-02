@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin="anonymous" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<!--     TOP HEADER-->
+<div class="container-fluid" >
+    <div class="column" style="position: relative">
+        <div class="row text" id="main-nav" >
+            <div class="col-lg-2 d-flex" style="align-items: center;">
+                <a href="../php%20files/Login.php" style="display: block">
+                    ورود به سایت
+                </a>
+                <a class = "loggedin" style="display: none">
+<!--                    line-height: 0;padding: 0;font-weight: 300;cursor:pointer;background: transparent;color: white;-->
+                    <form class="form-inline" action="/Identity/Account/Logout?returnUrl=%2F" method="post">
+                        <button style="display: inline;border: none; background: transparent;color: white;" type="submit" id="sign-out">
+                            <i style="margin-left: 0; margin-right: 0;" class="fa fa-sign-out"></i>
+                            خروج
+                        </button>
+                    </form>
+                </a>
+            </div>
+
+            <div class="col-lg-1 d-flex" style=" align-items: center;">
+                <a style=" display: block" href="../php%20files/Register.php">
+                    ثبت نام
+                </a>
+                <div class="loggedin dropdown" style="display: none; color: white">
+                <a > پروفایل</a>
+                    <div class="sub-menu dropdown-content">
+                        <li class="menu-item">
+                            <a href="/Identity/Account/Manage">
+                                <i class="fa fa-user-circle"></i>
+                                  پروفایل من
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a  href="/Identity/Account/Manage/Contract"><i class="fa fa-files-o"></i>قراردادهای من </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 last" >
+                <a href="../php%20files/MainPage.php"><i class="fa fa-home  fa-lg" style="color: white" size="60%"></i></a>
+            </div>
+
+        </div>
+
+        <!--    second header-->
+        <div class="row d-flex" style="align-items: center; padding-bottom: 0.7vw" id="sec-nav">
+            <div class="col-lg-2">
+                <img src="../img/ferdowsi-logo.png" style="display: block; z-index: 10">
+            </div>
+            <div class="col-lg-2" style="padding-left: 5%; padding-right: 75%">
+                <img src="../img/engeenering-logo.png" style="display: block; z-index: 10">
+            </div>
+        </div>
+<!--        third header-->
+        <div class="row text d-flex justify-content-between" id="third-nav">
+            <div class="col-lg-3 d-flex justify-content-center">
+                <a href="/Identity/Account/Login">
+                    ارتباط با ما
+                </a>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+                <a href="/Identity/Account/Register">
+                    بانک قرارداد
+                </a>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+                <a href="/Identity/Account/Register">
+                    امضا الکترونیک
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- /TOP HEADER -->
