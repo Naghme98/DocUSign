@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>داشبورد</title>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/editprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>داشبورد</header>
+        <ul>
+            <li><a href="#profile_edit_box"><i class="fas"></i>ویرایش اطلاعات</a></li>
+            <li><a id = "create_contract_btn" href="#create_contract_box"><i class="fas"></i>ساخت قرارداد</a></li>
+            <li><a href="#"><i class="fas"></i>قراردادها</a></li>
+            <li><a href="#"><i class="fas"></i>قرارداد های امضا شده</a></li>
+            <li><a href="#"><i class="far"></i>قرارداد های در انتظار امضا</a></li>
+            <li><a href="#"><i class="fas"></i>ارتباط با ادمین</a></li>
+        </ul>
+   </div>
+   <section>
+        <div class="box" id="profile_edit_box">
+            <input type="file" id="file" name="image" >
+            <img src="../img/default_profile_pic.png" id="profileimg" width="100%" height="100%">
+            <label for="file" id="imglabel">آپلود تصویر</label>
+            <input type="text" name="" placeholder="نام کاربری">
+            <input type="email" name="" placeholder="ایمیل">
+            <input type="text" name="" placeholder="شماره تلفن">
+            <input type="text" name="" placeholder="تاریخ تولد">
+            <input type="text" name="" placeholder="جنسیت">
+            <button id="editProfBtn" style="float: left;margin: 10px 0 0 18.2%;">ویرایش اطلاعات</button>
+       </div>
+       <div id="create_contract_box">
+        <h1>hello every body</h1>
+      </div>
+   </section>
+
+  </body>
+</html>

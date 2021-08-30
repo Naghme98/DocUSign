@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../html files/Header.html";
+include "./header.php";
 include "../db.php";
 
 if(!$_SESSION['loggedin']){

@@ -1,6 +1,6 @@
 <?php
 include "../db.php";
-include "../html files/Header.html";
+include "./header.php";
 if (isset($_POST['b_input_2_1'])) {
     ?>
 

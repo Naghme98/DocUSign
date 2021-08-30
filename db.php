@@ -1,10 +1,11 @@
 <?php
 
-$servername = "localhost";
-$username = "doc";
-$password = "docdoc";
-$db = "contract_database";
-
+require_once realpath(__DIR__ . '/DotEnv.php');
+(new DotEnv(__DIR__ .'/.env'))->load();
+$servername = getenv('DB_ADDRESS');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$db = getenv('DB_NAME');
 
 //create connection
 $con = new mysqli($servername,$username,$password,$db);
@@ -45,11 +46,14 @@ function insert($conn,$data_place,$data,$types,$columnNames,$table_name){
     $stmt->bind_param($types,...$data);
     $stmt->execute();
     if($stmt) {
+        print_r($stmt);
         $stmt->close();
         return true;
     }
-    else
+    else{
+        echo 'insert error';
         return false;
+    }
 }
 
 $q1 = 'SELECT MAX(MaddeNo) as number From contract_template WHERE TemplateID= \'TEMP_1\' ';

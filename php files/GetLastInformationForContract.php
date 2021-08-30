@@ -3,7 +3,7 @@ session_start();
 if(!$_SESSION['loggedin']){
     echo "<script> location.href='../php files/Login.php'; </script>";
 }
-include "../html files/Header.html";
+include "./header.php";
 $contract_data ='';
 if(isset($_POST['check'])) {
     ?>

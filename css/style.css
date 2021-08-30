@@ -1,3 +1,4 @@
+@import "_root";
 @font-face {
     font-family: 'IRAN Sans';
     src: url("../font/IRANSans.ttf") format("truetype");
@@ -62,6 +63,7 @@
     left: 0;
     height: 18%;
     background: rgb(226, 226, 226);
+    /* background: #141c99; */
     z-index: 10;
     box-shadow: 0 5px 18px #888888;
 }
@@ -256,6 +258,7 @@ a:hover {
 
 .main-footer {
     background-color: #222c35;
+    /* background-color: #141c99; */
     color: #fff;
 }
 

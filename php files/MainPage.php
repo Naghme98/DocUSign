@@ -1,4 +1,4 @@
-<?php include "../html files/Header.html";?>
+<?php include "./header.php";?>
 <div class="row" id="ferdowsi">
     <img src="../img/ferdowsi.jpg" width="100%" style="display: block; ">
     <div class="centered text-bold" style="padding-top: 2%; font-size: 1.7vw">"به سامانه رسمی «قرارداد آنلاین»
@@ -13,18 +13,18 @@
         <div class="row d-flex justify-content-around" id="e-c">
             <div class="col-md-4 col-sm-4 " id="hover2">
                 <div>
-                    <a id="e-sign">
+                    <a id="e-sign" href="../php%20files/ContractTextEditor.php" style="color: #0c0c0c">
                         <div>
                             <h2 class="text-bold">
                                         <span>
                                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                                         </span>
-                                امضای الکترونیک
+                                تنظیم قرارداد
                             </h2>
-                            <p class="text" style="font-size: 1vw">امضا آنلاین قرارداد‌های شما</p>
+                            <p class="text" style="font-size: 1vw">تنظیم قرارداد به صورت دستی</p>
                             <div class="img-wrap">
-                                <img src="../img/e-sign.jpg" alt="امضا الکترونیک قرارداد‌ها"
-                                     title="امضا الکترونیک قرارداد‌ها">
+                                <img src="../img/contract.jpg" alt="تنظیم قرارداد"
+                                     title="تنظیم قرارداد">
                             </div>
                         </div>
                     </a>

@@ -52,44 +52,19 @@
 
 <!-- HEADER -->
 <!--     TOP HEADER-->
-<header>
 <div class="container-fluid" >
     <div class="column" style="position: relative">
         <div class="row text" id="main-nav" >
             <div class="col-lg-2 d-flex" style="align-items: center;">
-                <a href="../php%20files/Login.php" style="display: block">
-                    ورود به سایت
-                </a>
-                <a class = "loggedin" style="display: none">
-<!--                    line-height: 0;padding: 0;font-weight: 300;cursor:pointer;background: transparent;color: white;-->
-                    <form class="form-inline" action="/Identity/Account/Logout?returnUrl=%2F" method="post">
-                        <button style="display: inline;border: none; background: transparent;color: white;" type="submit" id="sign-out">
-                            <i style="margin-left: 0; margin-right: 0;" class="fa fa-sign-out"></i>
-                            خروج
-                        </button>
-                    </form>
+                <a href="../php%20files/logout.php" style="display: block">
+                    خروج
                 </a>
             </div>
 
             <div class="col-lg-1 d-flex" style=" align-items: center;">
-                <a style=" display: block" href="../php%20files/Register.php">
-                    ثبت نام
+                <a style=" display: block" href="../php%20files/userDashboard.php">
+                    پروفایل من
                 </a>
-                <div class="loggedin dropdown" style="display: none; color: white">
-                <a > پروفایل</a>
-                    <div class="sub-menu dropdown-content">
-                        <li class="menu-item">
-                            <a href="/Identity/Account/Manage">
-                                <i class="fa fa-user-circle"></i>
-                                  پروفایل من
-                            </a>
-                        </li>
-
-                        <li class="menu-item">
-                            <a  href="/Identity/Account/Manage/Contract"><i class="fa fa-files-o"></i>قراردادهای من </a>
-                        </li>
-                    </div>
-                </div>
             </div>
 
             <div class="col-lg-9 last" >
@@ -128,6 +103,5 @@
         </div>
     </div>
 </div>
-</header>
-</body>
+
 <!-- /TOP HEADER -->
