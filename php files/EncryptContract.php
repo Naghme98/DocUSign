@@ -23,17 +23,17 @@ if(!$_SESSION['loggedin']){
 //            break;
 //        }
 //    }
-//    $user_id = selectFromDataBase('ID','user'," Email = '".$user_email."'",$con,'ID');
+    $user_id = selectFromDataBase('ID','user'," Email = '".$user_email."'",$con,'ID');
 //    $public_key = selectFromDataBase('PuKey','public_key',"UserID = '".$user_id. "' AND ActiveStatus = 'ACTIVE' ",$con,'PuKey');
-//    $private_key = selectFromDataBase('PrKey','private_key',"UserID = '".$user_id. "' AND ActiveStatus = 'ACTIVE' ",$con, 'PrKey');
-//    openssl_public_encrypt($contract_password, $encrypted, $public_key);
-//    $base64 = base64_encode($encrypted);
-//    $contract_id = selectFromDataBase('MAX(ID) as md','contract','1=1',$con,'md');
-//    $c_id = (substr($contract_id,strpos($contract_id,'_')+1)+1);
-////    $c_id = 1;
-//    $data = " 'CON_".$c_id."', '$contract_subject', '$contract_budget', '3', '$contract_copies', '$contract_start_date', '$contract_end_date', '"
-//        .count($contract_data['maddeTitles'])."', '$user_id', '$base64', 'SIGN_PENDING'";
-//    $column_names = "ID, ContractSubject, Budget, PageNums, CopyNums, StartDate, EndDate, MaddeNums, CreatorID, KeyUsedToSign, State";
+    $private_key = selectFromDataBase('PrKey','private_key',"UserID = '".$user_id. "' AND ActiveStatus = 'ACTIVE' ",$con, 'PrKey');
+    openssl_public_encrypt($contract_password, $encrypted, $public_key);
+    $base64 = base64_encode($encrypted);
+    $contract_id = selectFromDataBase('MAX(ID) as md','contract','1=1',$con,'md');
+    $c_id = (substr($contract_id,strpos($contract_id,'_')+1)+1);
+//    $c_id = 1;
+    $data = " 'CON_".$c_id."', '$contract_subject', '$contract_budget', '3', '$contract_copies', '$contract_start_date', '$contract_end_date', '"
+        .count($contract_data['maddeTitles'])."', '$user_id', '$base64', 'SIGN_PENDING'";
+    $column_names = "ID, ContractSubject, Budget, PageNums, CopyNums, StartDate, EndDate, MaddeNums, CreatorID, KeyUsedToSign, State";
 ////    var_dump(count($contract_data['bandParts']));
 //    insert($con,$data,$column_names,'contract');
 ////    $selected = selectFromDataBase('KeyUsedToSign','contract'," ID = 'CON_1'",$con,'KeyUsedToSign');
